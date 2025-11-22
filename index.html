@@ -425,6 +425,79 @@
             margin: 1 1.02rem;
             transition: opacity 0.5s;
         }
+
+        .deliverables-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .deliverable-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .deliverable-card h3 {
+            color: #4db8a8;
+            font-size: 1.5rem;
+            margin-bottom:1rem;
+        }
+        .deliverable-image {
+            width: 100%;
+            border-radius: 10px;
+            margin: 1rem 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .deliverable-link {
+            display: inline-block;
+            background: #4db8a8;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: background 0.3s;
+
+        }
+
+        .lab-section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .lab-section h3 {
+            color: #4db8a8;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #4db8a8;
+            padding-left: 1rem;
+        }
+        .submission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .submission-card {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 15px;
+            border-left: 5px solid #4db8a8;
+        }
+        .submission-card h4 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .submission-link {
+            color: #4db8a8;
+            text-decoration: none;
+            font-weight: 500;
+        }
         
     </style>
 </head>
@@ -434,7 +507,9 @@
         <ul>
             <li class="logo">TrashTag</li>
             <li><a onclick="showPage('home')">Home</a></li>
-            <li><a onclick="showPage('presentation')">Presentation</a></li>
+            <li><a onclick="showPage('presentation')">Presentations</a></li>
+            <li><a onclick="showPage('deliverables')">Deliverables</a></li>
+            <li><a onclick="showPage('labs')">Labs</a></li>
             <li><a onclick="showPage('team')">Team</a></li>
             <li><a onclick="showPage('references')">References</a></li>
             <li><a onclick="showPage('glossary')">Glossary</a></li>
@@ -477,12 +552,9 @@
 
             <h2> Solution Statement</h2>
             <p style = "text-align: justify;"> Provide the public a way of quickly communicating the scope and location of found litter, trash,
- and dumping to organizations willing and interested in clean up. A system where users can
- easily upload geotagged photos of litter or dumping, thus providing a map of areas to clean for
- the city, volunteer organizations, or even motivated individuals so the trash could be removed
- far more quickly and efficiently. The photos serve as easy visual identification of the trash as
- well as the scope of the problem. Over time, the data can even be used for public education or
- even city officials to dispatch people to problem areas as a preventative measure.</p>
+            and dumping to organizations willing and interested in clean up. A system where users can easily upload geotagged photos of litter or dumping, thus providing a map of areas to clean for the city, volunteer organizations, or even motivated individuals so the trash could be removed
+            far more quickly and efficiently. The photos serve as easy visual identification of the trash as well as the scope of the problem. Over time, the data can even be used for public education or
+            even city officials to dispatch people to problem areas as a preventative measure.</p>
 
         </section>
 
@@ -515,6 +587,53 @@
         </section>
 
         <section class="presentation-content">
+            <div class="design-section">
+                <h2>Design Presentations</h2>
+
+                <div class="presentation-item">
+                    <h3>Design Iteration 5</h3>
+                    <div class="iframe-content">
+                        <iframe src="PLACEHOLDER FOR PRESENTATION google slides LINK" allowfullscreen="true"></iframe>
+                    </div>
+                    <a href="PDF PLACEHOLDER" class="presentation-link" target="_blank"> Presentation PDF</a>
+                </div>
+
+                <div class="presentation-item">
+                    <h3>Design Iteration 4</h3>
+                    <div class="iframe-content">
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSzSEoTFV_II6jTViaxVPoqNkWgcB_nr4TUtCs1znH_KiqnC27m86WseqicomFYwUVu4XIeLdk7O5N2/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+                    </div>
+                    <a href="Assets/Design_Iteration_4.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
+                </div>
+
+                <div class="presentation-item">
+                    <h3>Design Iteration 2 & 3</h3>
+                    <div class="iframe-content">
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSgtT8rRadhMxwNHQNjDFRVtKJfk1j6swznIhloZwxXpgWas7gCZCovQhmbj8YtZCj0kx6Gk8sgUQDF/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+                    </div>
+                    <a href="Assets/Design_Iteration_3.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
+                </div>
+
+                <div class="presentation-item">
+                    <h3>Design Iteration 1</h3>
+                    <div class="iframe-content">
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSHSErEgPoTXjyGd7FNyXGWdcHCuyrOoBZpi57xSyzj1lBrxv2BxPHXS-oCKPdLZZIabYFVc-0XPA9W/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+                    </div>
+                    <a href="Assets/Design_Iteration_1.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
+                </div>
+                </div>
+
+                <div class="presentation-item">
+                    <h3> Feasability Version 2</h3>
+                    <div class="iframe-content">
+                        <iframe src="PLACEHOLDER LINK" allowfullscreen="true"></iframe>
+        
+                    </div>
+                    <a href="PLACEHOLDER .pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
+                </div>
+        
+
+
         <div class="presentation-item">
             <h3> Iteration 3</h3>
             <div class="iframe-content">
@@ -523,6 +642,7 @@
             </div>
             <a href="Assets/Feasibility_Presentation_Team_Iron_Iteration_3.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
         </div>
+
             <div class="presentation-item">
                 <h3> Iteration 2</h3>   
                 <div class="iframe-content">
@@ -542,6 +662,310 @@
             </div>
 
     </section>
+    </div>
+<!------PROJECT DELIVERABLES-->
+    <div id="deliverables" class="page">
+        <section class="hero">
+            <h1>Project Deliverables</h1>
+            <p>Key componenents from our project</p>
+        </section>
+
+        <section class="trashtag-section">
+            <h2>Process Flows</h2>
+            <div class="deliverables-grid">
+                <div class="deliverable-card">
+                    <h3>Problem Process Flow</h3>
+                    <img src="Assets/CPF.PNG" alt="Problem Process Flow" class="deliverable-image">
+                    <a href="Assets/CPF.png" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Solution Process Flow</h3>
+                    <img src="Assets/SPF.PNG" alt="Solution Process Flow" class="deliverable-image">
+                    <a href="Assets/SPF.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+            </div>
+
+            <!------platform Design------->
+            <h2>Platform Design</h2>
+            <div class="deliverables-grid">
+                <div class="deliverable-card">
+                    <h3>Major Functional Components Diagram(MFCD)</h3>
+                    <img src="Assets/MFCD.PNG" alt="MFCD" class="deliverable-image">
+                    <a href="Assets/MFCD.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Database Schema</h3>
+                    <img src="Assets/DATABASE_SCHEMA.PNG" alt="Database Schema" class="deliverable-image">
+                    <a href="Assets/DATABASE_SCHEMA.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+            </div>
+            <!-----ANALYSIS------>
+
+            <h2>Analysis</h2>
+            <div class="deliverables-grid">
+                <div class="deliverable-card">
+                    <h3>Competition Matrix</h3>
+                    <img src="Assets/COMPETITION_MATRIX.png" alt="Competition Matrix" class="deliverable-image">
+                    <a href="Assets/COMPETITION_MATRIX.png" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                    <div class="deliverable-card">
+                        <h3>User Risk</h3>
+                        <img src="Assets/USER_RISKS.PNG" alt="Risk Matrix" class="deliverable-image">
+                        <a href="Assets/USER_RISKS.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+    
+                    <div class="deliverable-card">
+                        <h3>Customer Risks</h3>
+                        <img src="Assets/CUSTOMER_RISKS.PNG" alt="Risk Matrix" class="deliverable-image">
+                        <a href="Assets/CUSTOMER_RISKS.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+    
+                    <div class="deliverable-card">
+                        <h3>Technical Risks</h3>
+                        <img src="Assets/TECHNICAL_RISKS.PNG" alt="Risk Matrix" class="deliverable-image">
+                        <a href="Assets/TECHNICAL_RISKS.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+    
+                    <div class="deliverable-card">
+                        <h3>Legal and Security Risks</h3>
+                        <img src="Assets/LEGAL_AND_SECURITY.PNG" alt="Risk Matrix" class="deliverable-image">
+                        <a href="Assets/LEGAL_AND_SECURITY.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+
+
+                <div class="deliverable-card">
+                    <h3>Feature Table 1</h3>
+                    <img src="Assets/FT_1.PNG" alt="Feature Table" class="deliverable-image">
+                    <a href="Assets/FT_1.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Feature Table 2</h3>
+                    <img src="Assets/FT_2.PNG" alt="Feature Table" class="deliverable-image">
+                    <a href="Assets/FT_2.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Feature Table 3</h3>
+                    <img src="Assets/FT_3.PNG" alt="Feature Table" class="deliverable-image">
+                    <a href="Assets/FT_3.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Feature Table 4</h3>
+                    <img src="Assets/FT_4.PNG" alt="Feature Table" class="deliverable-image">
+                    <a href="Assets/FT_4.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Feature Table 5</h3>
+                    <img src="Assets/FT_5.PNG" alt="Feature Table" class="deliverable-image">
+                    <a href="Assets/FT_5.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Feature Table 6</h3>
+                    <img src="Assets/FT_6.PNG" alt="Feature Table" class="deliverable-image">
+                    <a href="Assets/FT_6.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Work Breakdown Structure 1</h3>
+                    <img src="Assets/WBS_1.PNG" alt="WBS Diagram" class="deliverable-image">
+                    <a href="Assets/WBS_1.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Work Breakdown Structure 2</h3>
+                    <img src="Assets/WBS_2.PNG" alt="WBS Diagram" class="deliverable-image">
+                    <a href="Assets/WBS_2.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Work Breakdown Structure 3</h3>
+                    <img src="Assets/WBS_3.PNG" alt="WBS Diagram" class="deliverable-image">
+                    <a href="Assets/WBS_3.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Work Breakdown Structure(WBS) 4</h3>
+                    <img src="Assets/WBS_4.PNG" alt="WBS Diagram" class="deliverable-image">
+                    <a href="Assets/WBS_4.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Work Breakdown Structure 5</h3>
+                    <img src="Assets/WBS_5.PNG" alt="WBS Diagram" class="deliverable-image">
+                    <a href="Assets/WBS_5.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Work Breakdown Structure 6</h3>
+                    <img src="Assets/WBS_6.PNG" alt="WBS Diagram" class="deliverable-image">
+                    <a href="Assets/WBS_6.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Work Breakdown Structure 7</h3>
+                    <img src="Assets/WBS_7.PNG" alt="WBS Diagram" class="deliverable-image">
+                    <a href="Assets/WBS_7.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+
+            </div>
+            <!------Algorithms------>
+            <h2>Algorithm Design</h2>
+            <div class="deliverables-grid">
+                <div class="deliverable-card">
+                    <h3>Algorithm 1</h3>
+                    <img src="Assets/ALGORITHM_1.PNG" alt="Algorithms" class="deliverable-image">
+                    <a href="Assets/ALGORITHM_1.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Algorithm 2</h3>
+                    <img src="Assets/ALGORITHM_2.PNG" alt="Algorithms" class="deliverable-image">
+                    <a href="Assets/ALGORITHM_2.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Algorithm 3</h3>
+                    <img src="Assets/ALGORITHM_3.PNG" alt="Algorithms" class="deliverable-image">
+                    <a href="Assets/ALGORITHM_3.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+
+                <div class="deliverable-card">
+                    <h3>Algorithm 4</h3>
+                    <img src="Assets/ALGORITHM_4.PNG" alt="Algorithms" class="deliverable-image">
+                    <a href="Assets/ALGORITHM_4.PNG" class="deliverable-link" target="_blank">View PDF</a>
+                </div>
+            </div>
+
+                <h2>UI/UX Design</h2>
+                <div class="deliverables-grid">
+                    <div class="deliverable-card">
+                        <h3>UI Mockup 1</h3>
+                        <img src="Assets/UI_MOCKUPS_1.png" alt="UI Mockup 1" class="deliverable-image">
+                        <a href="Assets/UI_MOCKUPS_1.png" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+
+                    <div class="deliverable-card">
+                        <h3>UI Mockup 2</h3>
+                        <img src="Assets/UI_MOCKUPS_2.png" alt="UI Mockup 2" class="deliverable-image">
+                        <a href="Assets/UI_MOCKUPS_2.png" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+
+                    <div class="deliverable-card">
+                        <h3>UI Mockup 3</h3>
+                        <img src="Assets/UI_MOCKUPS_3.png" alt="UI Mockup 3" class="deliverable-image">
+                        <a href="Assets/UI_MOCKUPS_3.png" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+
+                    <div class="deliverable-card">
+                        <h3>UI Mockup 4</h3>
+                        <img src="Assets/UI_MOCKUPS_4.png" alt="UI Mockup 4" class="deliverable-image">
+                        <a href="Assets/UI_MOCKUPS_4.png" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+
+                    <div class="deliverable-card">
+                        <h3>UI Mockup 5</h3>
+                        <img src="Assets/UI_MOCKUPS_5.png" alt="UI Mockup 5" class="deliverable-image">
+                        <a href="Assets/UI_MOCKUPS_5.png" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+
+                    <div class="deliverable-card">
+                        <h3>UI Mockup 6</h3>
+                        <img src="Assets/UI_MOCKUPS_6.png" alt="UI Mockup 6" class="deliverable-image">
+                        <a href="Assets/UI_MOCKUPS_6.png" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+
+                    <div class="deliverable-card">
+                        <h3>UI Mockup 7</h3>
+                        <img src="Assets/UI_MOCKUPS_7.png" alt="UI Mockup 7" class="deliverable-image">
+                        <a href="Assets/UI_MOCKUPS_7.png" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+
+                    <div class="deliverable-card">
+                        <h3>UI Mockup 8</h3>
+                        <img src="Assets/UI_MOCKUPS_8.png" alt="UI Mockup 8" class="deliverable-image">
+                        <a href="Assets/UI_MOCKUPS_8.png" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+
+                    <div class="deliverable-card">
+                        <h3>UI Mockup 9</h3>
+                        <img src="Assets/UI_MOCKUPS_9.png" alt="UI Mockup 9" class="deliverable-image">
+                        <a href="Assets/UI_MOCKUPS_9.png" class="deliverable-link" target="_blank">View PDF</a>
+                    </div>
+
+
+                </div>
+        </section>
+    </div>
+<!---------LABS------------>
+
+    <div id="labs" class="page">
+        <section class="hero">
+            <h1>Labs</h1>
+            <p>Lab Outline and Individual team member submissions</p>
+        </section>
+        <section class="trashtag-section">
+            <div class="lab-section">
+                <h3>Lab 1 Outline</h3>
+                <iframe src="Assets/Lab_1_Outline.pdf" width="100%" height="650px"></iframe>
+                <a href="Assets/Lab_1_Outline.pdf" class="deliverable-link" target="_blank">Download Lab 1 Outline</a>
+            </div>
+<!---------Individual Labs-------->
+            <div class="lab-section">
+                <h3>Lab 1 Individual Submissions</h3>
+                <div class="submission-grid">
+
+                    <div class="submission-card">
+                        <h4>Scott Zumwalt</h4>
+                        <a href="PLACEHOLDER.pdf" class="submission-link" target="_blank">View Lab</a>
+                    </div>
+
+                    
+                    <div class="submission-card">
+                        <h4>Sara Perez</h4>
+                        <a href="Assets/LAB_1_SARA.pdf" class="submission-link" target="_blank">View Lab</a>
+                    </div>
+
+                    
+                    <div class="submission-card">
+                        <h4>Emily Rick</h4>
+                        <a href="Assets/LAB_1_EMILY.pdf" class="submission-link" target="_blank">View Lab</a>
+                    </div>
+
+                    
+                    <div class="submission-card">
+                        <h4>Luca Brooks</h4>
+                        <a href="PLACEHOLDER.pdf" class="submission-link" target="_blank">View Lab</a>
+                    </div>
+
+                    
+                    <div class="submission-card">
+                        <h4>Teddy Kovacs</h4>
+                        <a href="Assets/LAB_1_TEDDY.pdf" class="submission-link" target="_blank">View Lab</a>
+                    </div>
+
+                    
+                    <div class="submission-card">
+                        <h4>Adam Daif</h4>
+                        <a href="Assets/LAB_1_ADAM.pdf" class="submission-link" target="_blank">View Lab</a>
+                    </div>
+
+                    
+                    <div class="submission-card">
+                        <h4>Ryan Fee</h4>
+                        <a href="PLACEHOLDER.pdf" class="submission-link" target="_blank">View Lab</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- Team Bio Page -->
@@ -693,6 +1117,13 @@
             <div class="reference-item">
                 <p><strong>[17]</strong>The Economics of Litter, https://ktb.org/ktb-blog/the-economics-of-litter/</p>
             </div>
+
+            <div class="reference-item">
+                <p><strong>[18]</strong>48,000 Pounds of Litter Removed Across Virginia on Clean the Bay Day, https://web.archive.org/web/20250622092145/https:/www.cbf.org/news-media/newsroom/2025/virginia/more-than-43000-pounds-of-litter-removed-across-virginia-on-clean-the-bay-day.html 
+                    /</p>
+            </div>
+
+
 
 
         </section>
