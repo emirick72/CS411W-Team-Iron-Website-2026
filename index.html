@@ -507,9 +507,11 @@
         <ul>
             <li class="logo">TrashTag</li>
             <li><a onclick="showPage('home')">Home</a></li>
+            <li><a onclick="showPage('projectdescription')">Project Description</a></li>
             <li><a onclick="showPage('presentation')">Presentations</a></li>
             <li><a onclick="showPage('deliverables')">Deliverables</a></li>
             <li><a onclick="showPage('labs')">Labs</a></li>
+            <li><a onclick="showPage('userstories')">User Stories</a></li>
             <li><a onclick="showPage('team')">Team</a></li>
             <li><a onclick="showPage('references')">References</a></li>
             <li><a onclick="showPage('glossary')">Glossary</a></li>
@@ -536,13 +538,6 @@
  dumping requires planning and/or equipment for proper and safe removal. Many of these areas
  are also very large and clean up crews must walk great distances in search of any trash that must
  be picked up.</p>
-            <p> Key Issues:</p>
-            <ul>
-                <li><strong>Limited Resources:</strong>Organizations struggle to track illegal dumping while some items are too large for individuals to handle independently.</li>
-                <li><strong>Communication Gaps:</strong>Users don’t know who to contact regarding trash while also struggling to organize efficient cleanup operations.</li>
-                <li><strong>Inconvenience and Timing:</strong>Users are unable to report trash the moment they see it and forget by the time they return home.</li>
-                <li><strong>Complexity:</strong>Users contact organizations via email and social media yet those attempts often go unnoticed, requiring users to contact multiple organizations at a time. 
-            </ul>
             
             <h2> Customer and End User</h2>
             <h3> Primary Users</h3>
@@ -579,6 +574,67 @@
         </section>
     </div>
 
+    <div id="projectdescription" class="page">
+        <section class="hero">
+            <h1>Project Description</h1>
+            <p>The Problem and our Solution</p>
+        </section>
+        
+        <section class="trashtag-section">
+            <h2>Problem Statement</h2>
+            <p style="text-align: justify;">Independent organizations and local governments struggle to efficiently locate and remove litter in outdoor recreational areas such as parks, rivers, lakes, and beaches. Without knowing locations and characteristics of waste items, volunteer efforts can be left unprepared and ineffective. Communities lack a live reporting system to connect citizens with organizations capable of safe and efficient waste removal efforts. </p>
+        <h2>Problem characteristics</h2>
+        <h3>Resources</h3>
+        <ul>
+            <li>Organizations struggle to track illegal dumping.</li>
+            <li>Items too much for individuals.</li>
+            <li>Users and Litterers alike may or may not have adequate knowledge of proper disposal options.</li>
+        </ul>
+        <h3>Communications</h3>
+        <ul>
+            <li>Users don’t know who to contact regarding trash.</li>
+            <li>Users lack tools focused on organizing cleanup efforts.</li>
+            <li>User reports come in one at a time and require coordination within cleanup organizations to increase efficiency.</li>
+        </ul>
+        <h3>Convenience</h3>
+        <ul>
+            <li>Users can’t communicate in the moment when they see the trash.</li>
+            <li>They’ve forgotten by the time they return home.</li>
+            <li>Litterers often dump out of convenience on private or public property</li>
+        </ul>
+        <h3>Complexity</h3>
+        <ul>
+            <li>Users reach out to orgs via email/social media which may get lost or go unnoticed.</li>
+            <li>Thus, users contact multiple orgs at a time to ensure attention.</li>
+        </ul>
+
+        <h2>Solution Statement</h2>
+        <p style="text-align: justify;">TrashTag aims to improve the litter and waste cleanup process by developing a mobile application where users can photograph and report piles of waste, give their exact locations, and connect with cleanup groups that are well-equipped to handle the cleanup process in order to improve environmental wellbeing and preserve nature’s beauty for the public eye. We are committed to helping the environment and the public by providing a resource that clearly highlights the location, extent, type and weight of the waste as well as provides updates regarding existing cleanup efforts, dangers and geographic littering patterns to help cleanup crews allocate their time and resources more effectively. </p>
+        <h2>Solution characteristics</h2>
+        <h3>Live Reporting and Mapping</h3>
+        <ul>
+            <li>Users snap a picture of the litter and geotag it in the app for it to be uploaded to an interactive map.</li>
+            <li>This allows organizations to properly allocate time, resources, staff, and funding. </li>
+        </ul>
+        <h3>Litter Report System</h3>
+        <ul>
+            <li>The images provide users with a visual understanding of the problem.</li>
+            <li>This allows them to prepare resources for proper clean up.</li>
+        </ul>
+        <h3>"Litter Hero!"</h3>
+        <ul>
+            <li>A reward system for users who successfully clear litter locations from the map.</li>
+            <li>This allows users track their progress and notice measurable impact.</li>
+        </ul>
+        <h3>Close the Loop</h3>
+        <ul>
+            <li>When users are near reported trash they receive a request to verify the trash is still there or if its been previously cleared.</li>
+        </ul>
+
+        </section>
+    </div>
+
+
     <!-- Presentation Page -->
     <div id="presentation" class="page">
         <section class="presentation-hero">
@@ -593,9 +649,9 @@
                 <div class="presentation-item">
                     <h3>Design Iteration 5</h3>
                     <div class="iframe-content">
-                        <iframe src="PLACEHOLDER FOR PRESENTATION google slides LINK" allowfullscreen="true"></iframe>
+                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS6mm4n7TAoJgpNQEthw1mbpQCxYqtJQ3R4R72A6xi37uoiQ3gdINVerWjZ-QbXm2d8UB5IMiDtqBWR/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
                     </div>
-                    <a href="PDF PLACEHOLDER" class="presentation-link" target="_blank"> Presentation PDF</a>
+                    <a href="Assets/Design_Iteration_5.pdf" class="presentation-link" target="_blank"> Presentation PDF</a>
                 </div>
 
                 <div class="presentation-item">
@@ -957,6 +1013,108 @@
             </div>
         </section>
     </div>
+    <!------USER STORIES--------->
+    <div id="userstories" class="page">
+        <section class="hero">
+            <h1>User Stories</h1>
+            <p>How TrashTag functions in our community</p>
+        </section>
+        <section class="trashtag-section">
+            <h2>As a Citizen,</h2>
+            <ul style="font-size: 1.2rem; line-height: 2; margin-left: 2rem; color: #555;">
+                <li>I want to report the location of where trash is located so that other users can see where the issue is at and potentially clean it up.</li>
+                <li>I want to upload photos of litter I find so that others can see the issue, clean it, and mark it as cleaned.</li>
+                <li>I want to be able to report the litter type so that others are able to know if it can be safely disposed of or if assistance is required.</li>
+                <li>I want to mark the severity level of reported trash so that others can know how much litter is in the reported area.</li>
+                <li>I want to request cleanup verification status of the affected area so that it can be verified if it still exists or not.</li>
+                <li>I want to be able to interact with a map that locates litter-affected areas so that I can see where the litter is at.</li>
+                <li>I want to view the map with a “litter density” filter so that I can know which areas are heavily affected.</li>
+                <li>I want to be able to filter the map by “cleanup status”, “litter type”, and “location” so that the map can be easily accessible to users.</li>
+                <li>I want to coordinate, join, and view local cleanup events so that I can help with cleaning up litter.</li>
+                <li>I want to claim cleanup areas during cleanup events so that I can help with cleaning up litter.</li>
+                <li>I want to delegate cleanup tasks to other users when coordinating events so that cleanup events will run smoothly.</li>
+                <li>I want to be able to RSVP and check-in to local cleanup events so that my participation in the event(s) can be logged in the app.</li>
+                <li>I want to be able to see and click on app notifications about new litter-affected areas that get reported by other users so that I can be alerted to verify it.</li>
+                <li>I want to be able to receive proximity cleanup alerts and notifications so that I can be alerted to such events and plan accordingly.</li>
+                <li>I want to be able to update cleanup status so that cleanup tracking can be manually updated by users.</li>
+                <li>I want to upload proof of the cleanup, such as images, so that it can be accurately verified by other users.</li>
+                <li>I want to be able to monitor cleanup status so that I can know what needs to be cleaned up and where.</li>
+                <li>I want to verify accurate cleanup status so that repeated reports do not occur in report listings.</li>
+                <li>I want to flag suspicious content so that only litter-affected areas are getting properly reported.</li>
+                <li>I want to view impact statistics so that I can be motivated to help clean my community.</li>
+                <li>I want the app to have a reward system to that I can stay motivated to participate in clean up events.</li>
+                <li>I want to see a ranked list of “Top Contributors” so that I can easily track my reward progress against other users.</li>
+                <li>I want to be able to access the Community Guidelines so that there is clear communication between users.</li>
+                <li>I want my personal information to remain private so that I can safely report issues without fear of exposure.</li>
+                <li>I want to be able to mark certain reports as spam so that I can know if I need to flag a moderator to review it.</li>
+            </ul>
+            <h2>As an Orginization (Non-Profit Environmental Group),</h2>
+            <ul style="font-size: 1.2rem; line-height: 2; margin-left: 2rem; color: #555">
+                <li>I want to report the location of where trash is located so that other users can see where the issue is at and potentially clean it up.</li>
+                <li>I want to upload photos of litter I find so that others can see the issue, clean it, and mark it as cleaned.</li>
+                <li>I want to be able to report the litter type so that others are able to know if it can be safely disposed of or if assistance is required.</li>
+                <li>I want to mark the severity level of reported trash so that others can know how much litter is in the reported area.</li>
+                <li>I want to request cleanup verification status of the affected area so that it can be verified if it still exists or not.</li>
+                <li>I want to be able to interact with a map that locates litter-affected areas so that I can see where the litter is at.</li>
+                <li>I want to view the map with a “litter density” filter so that I can know which areas are heavily affected.</li>
+                <li>I want to be able to filter the map by “cleanup status”, “litter type”, and “location” so that the map can be easily accessible to users.</li>
+                <li>I want to coordinate, join, and view local cleanup events so that I can help with cleaning up litter.</li>
+                <li>I want to claim cleanup areas during cleanup events so that I can help with cleaning up litter.</li>
+                <li>I want to delegate cleanup tasks to other users when coordinating events so that cleanup events will run smoothly.</li>
+                <li>I want to be able to RSVP and check-in to local cleanup events so that my participation in the event(s) can be logged in the app.</li>
+                <li>I want to be able to see and click on app notifications about new litter-affected areas that get reported by other users so that I can be alerted to verify it.</li>
+                <li>I want to be able to receive proximity cleanup alerts and notifications so that I can be alerted to such events and plan accordingly.</li>
+                <li>I want to be able to update cleanup status so that cleanup tracking can be manually updated by users.</li>
+                <li>I want to upload proof of the cleanup, such as images, so that it can be accurately verified by other users.</li>
+                <li>I want to be able to monitor cleanup status so that I can know what needs to be cleaned up and where.</li>
+                <li>I want to verify accurate cleanup status so that repeated reports do not occur in report listings.</li>
+                <li>I want to flag suspicious content so that only litter-affected areas are getting properly reported.</li>
+                <li>I want to view impact statistics so that I can be motivated to help clean my community.</li>
+                <li>I want the app to have a reward system to that I can stay motivated to participate in clean up events.</li>
+                <li>I want to see a ranked list of “Top Contributors” so that I can easily track my reward progress against other users.</li>
+                <li>I want to be able to access the Community Guidelines so that there is clear communication between users.</li>
+                <li>I want to embed the TrashTag map on the organization’s website so that citizens can access the data easily.</li>
+                <li>I want to view reported litter areas for trends so that I can easily identify where help is needed most.</li>
+                <li>I want to download user reports of affected areas so that I can easily know which areas are most affected.</li>
+                <li>I want to view density (heavy litter)-related analytics so that I know which areas need help the most.</li>
+                <li>I want to track event impact and the number of events completed so that I can visibly measure our environmental impact on the community.</li>
+                <li>I want to view cleanup statistics so that our impact is measurable and trackable.</li>
+                <li>I want to be able to mark certain reports as spam so that I can know if I need to flag a moderator to review it.</li>
+                <li>I want to assign volunteers to a particular task via scheduled cleanups so that cleanup communication is effective.</li>
+                <li>I want to communicate with citizens and local government directly through the platform so that we can act together.</li>
+                <li>I want to be able to mark areas as in-progress so that other users know we are cleaning that area.</li>
+                <li>I want to be able to mark an area as litter free so that other users know the area is clean now. </li>
+            </ul>
+            <h2>As a Local Government</h2>
+            <ul style="font-size: 1.2rem; line-height: 2; margin-left: 2rem; color: #555;">
+                <li>I want to view aggregated litter trends and density maps so that I can identify problem areas.</li>
+                <li>I want to access statistics about litter reports and cleanups so that I can plan budgets and policies.</li>
+                <li>I want citizen data to remain anonymous so that privacy laws and ethics are upheld.</li>
+                <li>I want to receive periodic reports about cleanup progress so that I can track the impact on municipal costs.</li>
+                <li>I want to embed the TrashTag map on city websites so that citizens can access the data easily.</li>
+                <li>I want to be able to easily put the TrashTag map on city websites so that more people be informed about cleanups.</li>
+                <li>I want to be able to coordinate city wide clean up events so that they can use direct government resources.</li>
+                <li>I want to be able to claim cleanup areas so that hired volunteers can clean them directly.</li>
+                <li>I want to be able to delegate hired volunteers to a cleanup area so that we can communicate on the cleanup site without needing to be face to face.</li>
+                <li>I want to view upcoming cleanups so that we can advertise them on our website.</li>
+                <li>I want to RSVP to local events so that other volunteers know our volunteers will be there.</li>
+                <li>I want to check into events so that other volunteers know our volunteers are there.</li>
+            </ul>
+            <h2>As a Moderator,</h2>
+            <ul style="font-size: 1.2rem; line-height: 2; margin-left: 2rem; color: #555;">
+                <li>I want to be able to monitor and review user-submitted reports so that I can automatically remove inappropriate or duplicate data.</li>
+                <li>I want to respond to post reports from users so that the platform remains trustworthy.</li>
+                <li>I want tools to correct or delete false or spam submissions so that data analytics remain accurate.</li>
+                <li>I want to be able to create and enforce clear community guidelines so that the app can foster a healthy, engaging, and collaborative online community for users.</li>
+                <li>I want to be able to delegate tasks so that a misassigned task can be corrected.</li>
+                <li>I want to be able to view cleanup events so that I can monitor that event.</li>
+
+            </ul>
+
+        </section>
+    </div>
+
+
 
     <!-- Team Bio Page -->
     <div id="team" class="page">
