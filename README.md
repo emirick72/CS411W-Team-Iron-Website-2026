@@ -12,4 +12,5 @@ Repository for Team Iron's project website for ODU's CS 410 course.
 - Ryan Fee (rfee001@odu.edu)
 
 ## Team Iron Website Link
-https://emirick72.github.io/CS410-Team-Iron-Website-2025/
+https://emirick72.github.io/CS410-Team-Iron-Website-2025/ (old link)
+https://emirick72.github.io/CS411W-Team-Iron-Website-2026/
