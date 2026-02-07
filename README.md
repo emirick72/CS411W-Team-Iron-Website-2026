@@ -1,5 +1,5 @@
-# CS410-Team-Iron-Website-2025
-Repository for Team Iron's project website for ODU's CS 410 course.
+# CS410 and CS411W Team Iron Website (Fall 2025/Spring 2026)
+Repository for Team Iron's project website for ODU's CS 410 and CS 411W courses.
 
 ## Team Members
 
